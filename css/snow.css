@@ -1,0 +1,5 @@
+.xue{position:absolute;color:#fff;}
+.box .box-head {position:absolute;height:120px;width:120px;border-radius:60px;background:pink;margin:20px 600px;z-index:9999;overflow:hidden;}
+.box .box-intro {position:relative;padding-left:550px;padding-top:150px;}
+.box .box-intro h1 {color:white;font-size:40px;font-family: Geogia, Times New Roman, Times, serif;}
+.box .box-intro-target {color:white;font-size:22px;position:relative;padding-left:480px;}
