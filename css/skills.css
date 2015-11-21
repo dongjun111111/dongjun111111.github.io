@@ -12,7 +12,7 @@
     position: absolute;
     border-radius: 50%;
     background: #0cc;
-	left:22.019%;
+	left:120px;
 }
 .skills-javascript {
     width: 100px;
@@ -20,7 +20,7 @@
     position: absolute;
     border-radius: 50%;
     background: #0cc;
-	left:44.83%;
+	left:230px;
 }
 .skills-java {
     width: 100px;
@@ -28,7 +28,7 @@
     position: absolute;
     border-radius: 50%;
     background: #0cc;
-	left:68%;
+	left:340px;
 }
 .skills-python {
     width: 100px;
@@ -47,7 +47,7 @@
     border-radius: 50%;
     background: #0cc;
 	top:140px;
-	left:22.019%;
+	left:120px;
 	margin-top:40px;
 }
 .skills-linux {
@@ -57,7 +57,7 @@
     border-radius: 50%;
     background: #0cc;
 	top:140px;
-	left:44.83%;
+	left:230px;
 	margin-top:40px;
 }
 .skills-oracle {
@@ -67,7 +67,7 @@
     border-radius: 50%;
     background: #0cc;
 	top:140px;
-	left:68%;
+	left:340px;
 	margin-top:40px;
 }
 .skills-p {position:relative;top:100px;left:25px;color:white;}
