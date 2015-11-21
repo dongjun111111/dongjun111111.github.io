@@ -1,29 +1,29 @@
 *{padding:0;margin:0;}
 a,img{border:0;}
-.link-me {position:relative;padding-left:1200px;}
+.link-me {position:relative;padding-left:90%;}
 .link-me a img {margin-left:15px;}
   .intro {height:200px;width:100%;background:rgb(55, 172, 3);position:relative;opacity:0.9;filter(alpha(opacity:70));}
   .intro h2 {color:white;margin-bottom:20px;}
-  .intro .intro-content {position:relative;color:white;font-size:20px;line-height:32px;padding-left:220px;}/*µ±ÐÄÒç³ö*/
+  .intro .intro-content {position:relative;color:white;font-size:20px;line-height:32px;padding-left:22.4%;}/*µ±ÐÄÒç³ö*/
  .main {position:relative;height:820px;width:100%;/*background:#69F;*/background:#00385A;}
- .main .div1 {height:380px;width:550px;background:#06C;overflow:hidden;position:absolute;top:20px;left:100px;opacity:1;filter:alpha(opacity:100);}
+ .main .div1 {height:380px;width:550px;background:#06C;overflow:hidden;position:absolute;top:20px;left:16%;opacity:1;filter:alpha(opacity:100);}
  .main .div1 .h2 {position:relative;height:380px;width:550px;background:#06C;overflow:hidden;}
  .main .div1 .h2 h2 {text-align:center;color:white;margin-bottom:20px;padding-top:180px;font-size:40px;}
  .main .div1 .skills {position:relative;margin-left:50px;}
- .main .div2 {height:380px;width:550px;background:#06C;position:absolute;top:20px;left:700px;opacity:1;filter:alpha(opacity:100);}
+ .main .div2 {height:380px;width:550px;background:#06C;position:absolute;top:20px;left:48%;opacity:1;filter:alpha(opacity:100);}
  .main .div2 .h2 {position:relative;height:380px;width:550px;background:#06C;overflow:hidden;}
  .main .div2 .h2 h2 {text-align:center;color:white;padding-top:180px;font-size:40px;}
  .main .div2 .exercitation {position:relative;left:50px;color:white;font-size:20px;top:20px;}
- .main .div3 {height:380px;width:550px;background:#06C;position:absolute;top:420px;left:100px;opacity:1;filter:alpha(opacity:100);}
+ .main .div3 {height:380px;width:550px;background:#06C;position:absolute;top:420px;left:16%;opacity:1;filter:alpha(opacity:100);}
  .main .div3 .h2 {position:relative;height:380px;width:550px;background:#06C;overflow:hidden;}
  .main .div3 .h2 h2 {text-align:center;color:white;padding-top:180px;font-size:40px;}
  .main .div3 .education {position:relative;left:50px;color:white;font-size:20px;top:20px;}
- .main .div4 {height:380px;width:550px;background:#06C;position:absolute;top:420px;left:700px;opacity:1;filter:alpha(opacity:100);}
+ .main .div4 {height:380px;width:550px;background:#06C;position:absolute;top:420px;left:48%;opacity:1;filter:alpha(opacity:100);}
  .main .div4 .h2 {position:relative;height:380px;width:550px;background:#06C;overflow:hidden;}
  .main .div4 .h2 h2 {text-align:center;color:white;padding-top:180px;font-size:40px;}
  .main .div4 .project {position:relative;left:50px;color:white;font-size:20px;top:20px;}
  .assess {height:200px;width:100%;background:rgb(55, 172, 3);position:relative;opacity:0.9;filter(alpha(opacity:70));}
  .assess h2 {color:white;margin-bottom:20px;}
- .assess .assess-content {position:relative;color:white;font-size:20px;line-height:35px;padding-left:220px;}
+ .assess .assess-content {position:relative;color:white;font-size:20px;line-height:35px;padding-left:22.4%;}
  .footer {height:50px;width:100%;background:rgb(55, 172, 3);position:relative;}
  .footer p {color:red;text-align:center;font-size:20px;font-weight:bold;padding-top:15px;}
