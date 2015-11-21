@@ -6,6 +6,7 @@ a,img{border:0;}
   .intro h2 {color:white;margin-bottom:20px;}
   .intro .intro-content {position:relative;color:white;font-size:20px;line-height:32px;padding-left:17.4%;}/*µ±ÐÄÒç³ö*/
  .main {position:relative;height:820px;width:100%;word-break:break-all;background:#00385A;}
+ 
  .main .div1 {position:absolute;height:380px;width:550px;background:#06C;overflow:hidden;top:20px;left:15%;opacity:1;filter:alpha(opacity:100);}
  .main .div1 .h2 {position:relative;height:380px;width:550px;background:#06C;overflow:hidden;}
  .main .div1 .h2 h2 {text-align:center;color:white;margin-bottom:20px;padding-top:180px;font-size:40px;}
