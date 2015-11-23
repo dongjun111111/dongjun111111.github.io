@@ -12,7 +12,7 @@ a,img{border:0;}
  .main .div1 .h2 h2 {text-align:center;color:white;margin-bottom:20px;padding-top:180px;font-size:40px;}
  .main .div1 .skills {position:relative;margin-left:50px;}
 
- .main .div2 {height:380px;width:550px;background:#06C;overflow:hidden;top:20px;left:55%;opacity:1;filter:alpha(opacity:100);}
+ .main .div2 {position:absolute;height:380px;width:550px;background:#06C;overflow:hidden;top:20px;left:55%;opacity:1;filter:alpha(opacity:100);}
  .main .div2 .h2 {position:relative;height:380px;width:550px;background:#06C;overflow:hidden;}
  .main .div2 .h2 h2 {text-align:center;color:white;margin-bottom:20px;padding-top:180px;font-size:40px;}
  .main .div2 .exercitation {position:relative;left:50px;color:white;font-size:20px;top:20px;}
