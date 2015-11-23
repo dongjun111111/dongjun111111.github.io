@@ -5,27 +5,27 @@ a,img{border:0;}
   .intro {height:200px;width:100%;background:rgb(55, 172, 3);position:relative;opacity:0.9;filter(alpha(opacity:70));}
   .intro h2 {color:white;margin-bottom:20px;}
   .intro .intro-content {position:relative;color:white;font-size:20px;line-height:32px;padding-left:17.4%;}/*µ±ÐÄÒç³ö*/
- .main {position:relative;margin:10px auto;min-width:780px;max-width:1260px;height:820px;width:100%;word-break:break-all;background:#00385A;}
- 
- .main .div1 {position:absolute;height:380px;width:550px;background:#06C;overflow:hidden;top:20px;left:15%;opacity:1;filter:alpha(opacity:100);}
- .main .div1 .h2 {position:relative;height:380px;width:550px;background:#06C;overflow:hidden;}
- .main .div1 .h2 h2 {text-align:center;color:white;margin-bottom:20px;padding-top:180px;font-size:40px;}
- .main .div1 .skills {position:relative;margin-left:50px;}
+ .main {position:relative;height:820px;width:100%;word-break:break-all;background:#00385A;}
+ .main .four {margin:10px auto;min-width:780px;max-width:1260px;}
+ .main .four .div1 {position:absolute;height:380px;width:550px;background:#06C;overflow:hidden;top:20px;left:15%;opacity:1;filter:alpha(opacity:100);}
+ .main .four .div1 .h2 {position:relative;height:380px;width:550px;background:#06C;overflow:hidden;}
+ .main .four .div1 .h2 h2 {text-align:center;color:white;margin-bottom:20px;padding-top:180px;font-size:40px;}
+ .main .four .div1 .skills {position:relative;margin-left:50px;}
 
- .main .div2 {position:absolute;z-index:1;height:380px;width:550px;background:#06C;overflow:hidden;top:20px;left:55%;opacity:1;filter:alpha(opacity:100);}
- .main .div2 .h2 {position:relative;height:380px;width:550px;background:#06C;overflow:hidden;}
- .main .div2 .h2 h2 {text-align:center;color:white;margin-bottom:20px;padding-top:180px;font-size:40px;}
- .main .div2 .exercitation {position:relative;left:50px;color:white;font-size:20px;top:20px;}
+ .main .four .div2 {position:absolute;z-index:1;height:380px;width:550px;background:#06C;overflow:hidden;top:20px;left:55%;opacity:1;filter:alpha(opacity:100);}
+ .main .four .div2 .h2 {position:relative;height:380px;width:550px;background:#06C;overflow:hidden;}
+ .main .four .div2 .h2 h2 {text-align:center;color:white;margin-bottom:20px;padding-top:180px;font-size:40px;}
+ .main .four .div2 .exercitation {position:relative;left:50px;color:white;font-size:20px;top:20px;}
 
- .main .div3 {position:absolute;z-index:1;height:380px;width:550px;background:#06C;overflow:hidden;top:420px;left:15%;opacity:1;filter:alpha(opacity:100);}
- .main .div3 .h2 {position:relative;height:380px;width:550px;background:#06C;overflow:hidden;}
- .main .div3 .h2 h2 {text-align:center;color:white;margin-bottom:20px;padding-top:180px;font-size:40px;}
- .main .div3 .education {position:relative;left:50px;color:white;font-size:20px;top:20px;}
+ .main .four .div3 {position:absolute;z-index:1;height:380px;width:550px;background:#06C;overflow:hidden;top:420px;left:15%;opacity:1;filter:alpha(opacity:100);}
+ .main .four .div3 .h2 {position:relative;height:380px;width:550px;background:#06C;overflow:hidden;}
+ .main .four .div3 .h2 h2 {text-align:center;color:white;margin-bottom:20px;padding-top:180px;font-size:40px;}
+ .main .four .div3 .education {position:relative;left:50px;color:white;font-size:20px;top:20px;}
 
- .main .div4 {position:absolute;z-index:1;height:380px;width:550px;background:#06C;overflow:hidden;top:420px;left:55%;opacity:1;filter:alpha(opacity:100);}
- .main .div4 .h2 {position:relative;height:380px;width:550px;background:#06C;overflow:hidden;}
- .main .div4 .h2 h2 {text-align:center;color:white;margin-bottom:20px;padding-top:180px;font-size:40px;}
- .main .div4 .project {position:relative;left:50px;color:white;font-size:20px;top:20px;}
+ .main .four .div4 {position:absolute;z-index:1;height:380px;width:550px;background:#06C;overflow:hidden;top:420px;left:55%;opacity:1;filter:alpha(opacity:100);}
+ .main .four .div4 .h2 {position:relative;height:380px;width:550px;background:#06C;overflow:hidden;}
+ .main .four .div4 .h2 h2 {text-align:center;color:white;margin-bottom:20px;padding-top:180px;font-size:40px;}
+ .main .four .div4 .project {position:relative;left:50px;color:white;font-size:20px;top:20px;}
 
  .assess {height:200px;width:100%;background:rgb(55, 172, 3);position:relative;opacity:0.9;filter(alpha(opacity:70));}
  .assess h2 {color:white;margin-bottom:20px;}
