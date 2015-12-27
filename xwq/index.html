@@ -3,7 +3,9 @@
 <head>
 <meta content="text/html; charset=gb2312" />
 <title>To XWQ</title>
-<style type="text/css"></style>
+<style type="text/css">
+	.opacity {opacity:0.1;filter:alpha(opacity:10);filter:"alpha(opacity:10)";-webkit-opacity: 0.1;-moz-opacity:0.1; }
+</style>
 <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 <link href="css/default.css" type="text/css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -17,6 +19,7 @@
 <script src="/follow.js" type="text/javascript"></script>
 </div>
 <div id="mainDiv">
+<iframe id='song' class='opacity' frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="http://music.163.com/outchain/player?type=2&id=39635862&auto=1&height=32"></iframe>
 	<div id="content">
 		<div id="code">
 			<span class="comments">/*</span><br />
@@ -39,7 +42,7 @@
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
 			<div id="words">
-				<div id="messages">
+				<div id="messages">				
 					It is my honor to meet you.
 					<div id="elapseClock"></div>
 				</div>
@@ -52,6 +55,13 @@
 	</div>
 </div>
 <script type="text/javascript">
+var song=document.getElementById('song');
+song.onmouseover=function(){
+	this.style.opacity='1';
+}
+song.onmouseout=function(){
+	this.style.opacity='0.1';
+}
 var offsetX = $("#loveHeart").width() / 2;
 var offsetY = $("#loveHeart").height() / 2 - 55;
 var together = new Date();
