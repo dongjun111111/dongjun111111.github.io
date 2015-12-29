@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta content="text/html; charset=gb2312" />
+<meta content="text/html; charset=UTF-8" />
 <title>To XWQ</title>
 <style type="text/css">
 	.opacity {opacity:0.1;filter:alpha(opacity:10);filter:"alpha(opacity:10)";-webkit-opacity: 0.1;-moz-opacity:0.1; }
@@ -55,6 +55,25 @@
 	</div>
 </div>
 <script type="text/javascript">
+function click() {if (event.button==2) {alert('Peek at the bottom!');}}
+document.onmousedown=click;
+//禁用开发者工具
+$(document).keydown(function() {
+    return key(arguments[0]);
+});
+function key(a) {  
+    var b;
+    if (window.event) {
+        b = a.keyCode;
+    } else {
+        if (a.which) {
+            b = a.which;
+        };
+    };
+    if (b == 123) {
+        return false;
+    };
+};
 var song=document.getElementById('song');
 song.onmouseover=function(){
 	this.style.opacity='1';
