@@ -28,7 +28,7 @@
 		</style>
 	</head>
 <body>
-<div class="main">
+<div class="main" id="target">
 
 <div  class="head">
 <img src="./images/me-2.jpg" class="avatar"  />
@@ -146,21 +146,23 @@
 	alert("Yes - end10right1");
 }
 window.onload=function(){
-	touch.on(document, 'touchstart', function(ev){
-		ev.preventDefault();
-	});
+	touch.on('#target', 'touchstart', function(ev){
+	ev.preventDefault();
+});
 
-	document.style.webkitTransition = 'all ease 0.2s';
+var target = document.getElementById("target");
+target.style.webkitTransition = 'all ease 0.2s';
 
-	touch.on(document, 'swiperight', function(ev){
-		this.style.webkitTransform = "translate3d(" + rt + "px,0,0)";
-		funcright();
-	});
+touch.on(target, 'swiperight', function(ev){
+	this.style.webkitTransform = "translate3d(" + rt + "px,0,0)";
+	funcright();
+});
 
-	touch.on(document, 'swipeleft', function(ev){
-		funcleft();
-		this.style.webkitTransform = "translate3d(-" + this.offsetLeft + "px,0,0)";
-	});
+touch.on(target, 'swipeleft', function(ev){
+	funcleft();
+	this.style.webkitTransform = "translate3d(-" + this.offsetLeft + "px,0,0)";
+});
+
 }
 </script>
 </body>
