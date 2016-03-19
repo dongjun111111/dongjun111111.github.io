@@ -156,12 +156,13 @@ var touchFunc = function(obj,type,func) {
                 if(type.indexOf("right")!=-1) func();
             }
         }
+         if(type.indexOf("end")!=-1) func();
     }, false);
 };
 var func =function(){
-	alert("Yes - end7");
+	alert("Yes - end8");
 }
-touchFunc(document,"touchend",func);
+touchFunc(document,"left",func);
 </script>
 </body>
 </html>
