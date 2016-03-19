@@ -144,21 +144,6 @@ var touchFunc = function(obj,type,func) {
     var sTime = 0, eTime = 0;
     type = type.toLowerCase();
   
-    obj.addEventListener("touchstart",function(){
-        sTime = new Date().getTime();
-        init.sx = event.targetTouches[0].pageX;
-        init.sy = event.targetTouches[0].pageY;
-        init.ex = init.sx;
-        init.ey = init.sy;
-        if(type.indexOf("start") != -1) func();
-    }, false);
-  
-    obj.addEventListener("touchmove",function() {
-        event.preventDefault();//阻止触摸时浏览器的缩放、滚动条滚动
-        init.ex = event.targetTouches[0].pageX;
-        init.ey = event.targetTouches[0].pageY;
-        if(type.indexOf("move")!=-1) func();
-    }, false);
   
     obj.addEventListener("touchend",function() {
         var changeX = init.sx - init.ex;
@@ -193,9 +178,9 @@ var touchFunc = function(obj,type,func) {
     }, false);
 };
 var func =function(){
-	alert("Yes - end");
+	alert("Yes - end2");
 }
-touchFunc(document,"touchend",func);
+touchFunc(document,"touchend2",func);
 </script>
 </body>
 </html>
