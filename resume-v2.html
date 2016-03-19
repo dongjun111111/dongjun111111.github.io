@@ -169,9 +169,12 @@ function touchMoveFunc(e) {
     	alert("上下滑动"); 
  
     }  
-}  
-touchSatrtFunc(e);
-touchMoveFunc(e);
+}
+window.onload=function(){
+	touchSatrtFunc();
+	touchMoveFunc();
+} 
+
 </script>
 </body>
 </html>
