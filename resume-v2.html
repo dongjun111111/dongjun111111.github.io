@@ -156,23 +156,13 @@ var touchFunc = function(obj,type,func) {
                 if(type.indexOf("right")!=-1) func();
             }
         }
-        else if(Math.abs(changeX)<init.x && Math.abs(changeY)<init.y){
-            eTime = new Date().getTime();
-            //点击事件，此处根据时间差细分下
-            if((eTime - sTime) > 300) {
-                if(type.indexOf("long")!=-1) func(); //长按
-            }
-            else {
-                if(type.indexOf("click")!=-1) func(); //当点击处理
-            }
-        }
         if(type.indexOf("end")!=-1) func();
     }, false);
 };
 var func =function(){
-	alert("Yes - end3");
+	alert("Yes - end4");
 }
-touchFunc(document,"touchend3",func);
+touchFunc(document,"touchend4",func);
 </script>
 </body>
 </html>
