@@ -137,32 +137,30 @@
 		</div>
 	</div>
 </div>
+<script src="http://code.baidu.com/touch-0.2.14.min.js"></script>
 <script>
-var touchFunc = function(obj,type,func) {
-    //滑动范围在5x5内则做点击处理，s是开始，e是结束
-    var init = {x:5,y:5,sx:0,sy:0,ex:0,ey:0};
-    var sTime = 0, eTime = 0;
-    type = type.toLowerCase();
-  
-  
-    obj.addEventListener("touchend",function() {
-        var changeX = init.sx - init.ex;
-        var changeY = init.sy - init.ey;
-        if(Math.abs(changeX)>Math.abs(changeY)&&Math.abs(changeY)>init.y) {
-            //左右事件
-            if(changeX > 0) {
-                if(type.indexOf("left")!=-1) func();
-            }else{
-                if(type.indexOf("right")!=-1) func();
-            }
-        }
-         if(type.indexOf("end")!=-1) func();
-    }, false);
-};
-var func =function(){
-	alert("Yes - end9");
+ function funcleft(){
+	alert("Yes - end10left");
 }
-touchFunc(document,"touchend",func);
+ function funcright(){
+	alert("Yes - end10right");
+}
+touch.on('#target', 'touchstart', function(ev){
+	ev.preventDefault();
+});
+
+var target = document.getElementById("target");
+target.style.webkitTransition = 'all ease 0.2s';
+
+touch.on(target, 'swiperight', function(ev){
+	this.style.webkitTransform = "translate3d(" + rt + "px,0,0)";
+	funcright();
+});
+
+touch.on(target, 'swipeleft', function(ev){
+	funcleft();
+	this.style.webkitTransform = "translate3d(-" + this.offsetLeft + "px,0,0)";
+});
 </script>
 </body>
 </html>
