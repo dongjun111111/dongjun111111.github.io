@@ -146,23 +146,9 @@
 	alert("Yes - end10right1");
 }
 window.onload=function(){
-	touch.on('#target', 'touchstart', function(ev){
-	ev.preventDefault();
-});
-
-var target = document.getElementById("target");
-target.style.webkitTransition = 'all ease 0.2s';
-
-touch.on(target, 'swiperight', function(ev){
-	this.style.webkitTransform = "translate3d(" + rt + "px,0,0)";
-	funcright();
-});
-
-touch.on(target, 'swipeleft', function(ev){
-	funcleft();
-	this.style.webkitTransform = "translate3d(-" + this.offsetLeft + "px,0,0)";
-});
-
+	touch.on('#target', 'touchstart touchmove touchend', function(ev){
+   		alert(ev.type);
+	});
 }
 </script>
 </body>
