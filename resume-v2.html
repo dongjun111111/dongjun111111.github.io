@@ -11,23 +11,28 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<style>
-		*{margin:0;padding:0;}
-		.main a {text-decoration:none;}
+		*{margin:0;padding:0;}		
 		.head {height:100px;width:auto;position:relative;text-align:center;margin-top:10px;}
+		.head .avatar {height:80px;width:80px;border-radius:40px;}
+		.head .name {font-size:20px;}
+		.head .nickname {font-size:15px;}
 		.main {font-family:'微软雅黑';background:#e7e7e7;overflow:hidden;word-break:break-all;font-size:20px;}
+		.main a {text-decoration:none;color:black;}
+		.main a:hover{color:green;}
+		.main a:active{color:green;}
 		.main .top {margin-top:15px;height:auto;width:100%;background:white;border-radius:5px;}
-		.main .inner {height:auto;width:90%;position:relative;margin:0 auto;}
-		.main .inner .foot {background:none;text-align:center;font-size:12px;}
+		.main .inner {height:auto;width:90%;position:relative;margin:0 auto;}	
 		.main .inner ul,ol {list-style-type:none;}
 		.main .inner ul,ol li {margin-left:1em;}
+		.main .inner .foot {background:none;text-align:center;font-size:12px;}
 		</style>
 	</head>
 <body>
 <div class="main">
 
 <div  class="head">
-<img src="./images/me-2.jpg" height="80px" width="80px" style="border-radius:40px;"  />
-<p style="font-size:20px;"><b>董军</b><span style="font-size:15px;">&nbsp Jason</span></p>
+<img src="./images/me-2.jpg" class="avatar"  />
+<p class="name"><b>董军</b><span class="nickname">&nbsp Jason</span></p>
 </div>
 
 	<div class="inner">
@@ -58,7 +63,7 @@
 					<li>岗位：前端实习生</li>
 					<li>时间：2015-07~2015-10</li>
 					<li>公司：黄山瑞文信息科技有限公司</li>
-					<li>职责：因为公司刚成立不久，工作主要跟随正式员工开发一些实验性项目</li>
+					<li>职责：协助组员开发维护公司官网，上新活动页面</li>
 				</ul>
 			</li>
 			</ul>
@@ -78,7 +83,7 @@
 				<ol>
 					<li>名称：PHP个人博客系统</li>
 					<li>时间：2015-07~2015-11</li>
-					<li>描述：使用PHP基础语法，使用HTML、CSS、Javascript，包括基本的登录模块，文章发表模块，评论模块，项目比较简单，地址在<a href="https://github.com/dongjun111111/PHP" >https://github.com/dongjun111111/PHP</a></li>
+					<li>描述：使用PHP基础语法，使用HTML、CSS、Javascript，包括基本的登录模块，文章发表模块，评论模块，项目比较简单。地址在<a href="https://github.com/dongjun111111/PHP" >https://github.com/dongjun111111/PHP</a></li>
 				</ol>
 			</li>		
 			</ul>
@@ -119,7 +124,7 @@
 			</ul>
 		</div>
 		<!--语言能力-->
-		<div style="" class="top">
+		<div  class="top">
 			<h4>语言能力</h4>
 			<ol>
 			<li>普通话：良好</li>	
