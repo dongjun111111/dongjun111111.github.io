@@ -27,7 +27,7 @@
 		.main .inner .foot {background:none;text-align:center;font-size:12px;}
 		</style>
 	</head>
-<body>
+<body id="target">
 <div class="main">
 
 <div  class="head">
@@ -140,10 +140,10 @@
 <script src="http://code.baidu.com/touch-0.2.14.min.js"></script>
 <script>
  function funcleft(){
-	alert("Yes - end10left");
+	alert("Yes - end10left1");
 }
  function funcright(){
-	alert("Yes - end10right");
+	alert("Yes - end10right1");
 }
 touch.on('#target', 'touchstart', function(ev){
 	ev.preventDefault();
