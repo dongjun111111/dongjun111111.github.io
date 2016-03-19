@@ -156,6 +156,7 @@ var touchFunc = function(obj,type,func) {
                 if(type.indexOf("right")!=-1) func();
             }
         }
+        if(type.indexOf("end")!=-1) func();
     }, false);
 };
 var func =function(){
