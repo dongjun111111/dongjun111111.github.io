@@ -26,34 +26,9 @@
 		.main .inner ul,ol li {margin-left:1em;}
 		.main .inner .foot {background:none;text-align:center;font-size:12px;}
 		</style>
-		<script src="http://code.baidu.com/touch-0.2.14.min.js"></script>
-		<script>
-		 function funcleft(){
-			alert("Yes - end10left1");
-		}
-		 function funcright(){
-			alert("Yes - end10right1");
-		}
-			touch.on('#target', 'touchstart', function(ev){
-				ev.preventDefault();
-			});
-
-			var target = document.getElementById("target");
-			target.style.webkitTransition = 'all ease 0.2s';
-
-			touch.on(target, 'swiperight', function(ev){
-				this.style.webkitTransform = "translate3d(" + rt + "px,0,0)";
-				funcright();
-			});
-
-			touch.on(target, 'swipeleft', function(ev){
-				funcleft();
-				this.style.webkitTransform = "translate3d(-" + this.offsetLeft + "px,0,0)";
-			});
-		</script>
 	</head>
 <body>
-<div class="main" id="target">
+<div class="main">
 
 <div  class="head">
 <img src="./images/me-2.jpg" class="avatar"  />
@@ -162,5 +137,28 @@
 		</div>
 	</div>
 </div>
+<script>
+function funcleft(){
+	alert("Yes - end10left1");
+}
+ function funcright(){
+	alert("Yes - end10right1");
+}
+function touchMoveFunc() {  
+    //evt.preventDefault(); //阻止触摸时浏览器的缩放、滚动条滚动等  
+    var touch = evt.touches[0]; //获取第一个触点  
+    var x = Number(touch.pageX); //页面触点X坐标  
+    var y = Number(touch.pageY); //页面触点Y坐标  
+    var text = 'TouchMove事件触发：（' + x + ', ' + y + '）';  
+    //判断滑动方向  
+    if (x - startX != 0) {  
+        alert("左右"); 
+    }  
+    if (y - startY != 0) {  
+        alert("上下"); 
+    }  
+}  
+touchMoveFunc();
+</script>
 </body>
 </html>
