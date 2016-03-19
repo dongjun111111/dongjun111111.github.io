@@ -156,14 +156,6 @@ var touchFunc = function(obj,type,func) {
                 if(type.indexOf("right")!=-1) func();
             }
         }
-        else if(Math.abs(changeY)>Math.abs(changeX)&&Math.abs(changeX)>init.x){
-            //上下事件
-            if(changeY > 0) {
-                if(type.indexOf("top")!=-1) func();
-            }else{
-                if(type.indexOf("down")!=-1) func();
-            }
-        }
         else if(Math.abs(changeX)<init.x && Math.abs(changeY)<init.y){
             eTime = new Date().getTime();
             //点击事件，此处根据时间差细分下
@@ -178,9 +170,9 @@ var touchFunc = function(obj,type,func) {
     }, false);
 };
 var func =function(){
-	alert("Yes - end2");
+	alert("Yes - end3");
 }
-touchFunc(document,"touchend2",func);
+touchFunc(document,"touchend3",func);
 </script>
 </body>
 </html>
