@@ -46,7 +46,8 @@
 		<div  class="nightmode" id="nightmode" style="height:1px;">
 			<h4><font color=red>夜间模式使用方法</font></h4>
 			<ul>
-			<li>Alt+Z：打开夜间模式</li>
+			<li>点击头像：呼出夜间模式使用方法</li>
+			<li>Alt+Z：打开夜间模式</li>		
 			<li>Alt+X：关闭夜间模式</li>
 			<li>Alt+↑：变亮</li>
 			<li>Alt+↓：变暗</li>
@@ -196,8 +197,14 @@ window.addEventListener('keydown', function(e) {
 }, false);
 avatar = document.getElementById('avatar');
 nightmode = document.getElementById('nightmode');
+window.onload=function(){
+	startMove(nightmode,170);
+	setTimeout(function(){
+		startMove(nightmode,1);
+	},4000);
+}
 avatar.onmouseover=function(){
-	startMove(nightmode,135);
+	startMove(nightmode,170);
 }
 avatar.onmouseout=function(){
 	startMove(nightmode,1);
