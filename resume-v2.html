@@ -196,33 +196,52 @@ window.addEventListener('keydown', function(e) {
         if (brightness + 0.05 < 0.95) cover(brightness += 0.05);
     }
 }, false);
+//判断浏览器类型
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
 avatar = document.getElementById('avatar');
 nightmode = document.getElementById('nightmode');
-window.onload=function(){
-	startMove(nightmode,170);
-	setTimeout(function(){
+isPC = IsPC();
+if(isPC === true){
+	window.onload=function(){		
+		startMove(nightmode,165);
+		setTimeout(function(){
+			startMove(nightmode,1);
+		},4000);	
+	}
+	avatar.onmouseover=function(){
+		startMove(nightmode,165);
+	}
+	avatar.onmouseout=function(){
 		startMove(nightmode,1);
-	},4000);
+	}
+	function startMove(obj,iTarget)
+	{
+	 clearInterval(obj.timer);
+	 obj.timer=setInterval(function(){
+		 speed=(iTarget-obj.offsetHeight)/6;
+		 speed=speed>0?Math.ceil(speed):Math.floor(speed);
+		 if(obj.offsetHeight==iTarget)
+		 {clearInterval(obj.timer);
+		 }else{
+	      obj.style.height=obj.offsetHeight+speed+"px";
+		 }
+		},30);
+	}
 }
-avatar.onmouseover=function(){
-	startMove(nightmode,170);
-}
-avatar.onmouseout=function(){
-	startMove(nightmode,1);
-}
-function startMove(obj,iTarget)
-{
- clearInterval(obj.timer);
- obj.timer=setInterval(function(){
-	 speed=(iTarget-obj.offsetHeight)/6;
-	 speed=speed>0?Math.ceil(speed):Math.floor(speed);
-	 if(obj.offsetHeight==iTarget)
-	 {clearInterval(obj.timer);
-	 }else{
-      obj.style.height=obj.offsetHeight+speed+"px";
-	 }
-	},30);
-}
+
 </script>
 </body>
 </html>
