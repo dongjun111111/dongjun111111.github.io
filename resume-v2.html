@@ -16,7 +16,13 @@
 		.head .avatar {height:80px;width:80px;border-radius:40px;}
 		.head .name {font-size:20px;}
 		.head .nickname {font-size:15px;}
-		.main {font-family:'微软雅黑';background:#e7e7e7;overflow:hidden;word-break:break-all;font-size:20px;}
+		.cover{		   
+		    top: 0px;
+		    left: 0px;
+		    outline:5000px solid rgba(0, 0, 0, 0.3);
+		    z-index: 99999;
+		}
+		.main {font-family:'微软雅黑';background:#e7e7e7;color:black;font-size:20px;overflow:hidden;word-break:break-all;}
 		.main a {text-decoration:none;color:black;}
 		.main a:hover{color:green;}
 		.main a:active{color:green;}
@@ -24,15 +30,16 @@
 		.main .inner {height:auto;width:90%;position:relative;margin:0 auto;}	
 		.main .inner ul,ol {list-style-type:none;}
 		.main .inner ul,ol li {margin-left:1em;}
-		.main .inner .foot {background:none;text-align:center;font-size:12px;}
+		.main .inner .foot {background:none;text-align:center;font-size:12px;}	
 		</style>
 	</head>
 <body> 
-<div class="main">
+<div class="main cover">
 
 <div  class="head">
 <img src="./images/me-2.jpg" class="avatar"/>
 <p class="name"><b>董军</b><span class="nickname">&nbsp Jason</span></p>
+
 </div>
 
 	<div class="inner">
@@ -150,5 +157,34 @@
 		</div>
 	</div>
 </div>
+<script>
+var brightness;
+//显示遮罩
+function cover(brightness) {
+    if (typeof(div) == 'undefined') {
+        div = document.createElement('div');
+        div.setAttribute('style', 'position:fixed;top:0;left:0;outline:5000px solid;z-index:99999;');
+        document.body.appendChild(div);
+    } else {
+        div.style.display = '';
+    }
+    div.style.outlineColor = 'rgba(0,0,0,' + brightness + ')';
+}
+//事件监听
+window.addEventListener('keydown', function(e) {
+    if (e.altKey && e.keyCode == 90) { //Alt+Z:打开夜间模式
+        cover(brightness = 0.3);
+    }
+    if (e.altKey && e.keyCode == 88) { //Alt+X:关闭
+        cover(brightness = 0);
+    }
+    if (e.altKey && e.keyCode == 38) { //Alt+↑:增加亮度
+        if (brightness - 0.05 > 0.05) cover(brightness -= 0.05);
+    }
+    if (e.altKey && e.keyCode == 40) { //Alt+↓:降低亮度
+        if (brightness + 0.05 < 0.95) cover(brightness += 0.05);
+    }
+}, false);
+</script>
 </body>
 </html>
