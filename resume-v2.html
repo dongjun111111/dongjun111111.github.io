@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<title>董军-18855971036-dongjun903456@163.com</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <meta name="Keywords" content="简历,求职,工作,梦想">
         <meta name="Description" content="这是一名黄山学院大四学生的关于职业的主要信息汇总,明明是一名化学狗，偏偏想要在互联网的世界里闯荡！结果会怎样呢，敬请期待···">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -28,7 +28,7 @@
 		.main a:hover{color:green;}
 		.main a:active{color:green;}
 		.main .top {margin-top:15px;height:auto;width:100%;background:white;border-radius:5px;}
-		.main .nightmode {margin-top:15px;width:100%;background:white;border-radius:5px;overflow:hidden;}
+		.main .nightmode {margin-top:15px;width:100%;border-radius:5px;overflow:hidden;background:pink;}
 		.main .inner {height:auto;width:90%;position:relative;margin:0 auto;}	
 		.main .inner ul,ol {list-style-type:none;}
 		.main .inner ul,ol li {margin-left:1em;}
@@ -45,7 +45,7 @@
 	<div class="inner">
 		<!--夜间模式使用方法-->
 		<div  class="nightmode" id="nightmode" style="height:1px;">
-			<h4><font color=red>夜间模式使用方法</font></h4>
+			<h4>夜间模式使用方法</h4>
 			<ul>
 			<li>点击头像：呼出夜间模式使用方法</li>
 			<li>Alt+Z：打开夜间模式</li>		
@@ -221,7 +221,7 @@ if(isPC === true){
 			startMove(nightmode,1);
 		},4000);	
 	}
-	avatar.onmouseover=function(){
+	avatar.onmouseover=function(){		
 		startMove(nightmode,165);
 	}
 	avatar.onmouseout=function(){
@@ -233,15 +233,14 @@ if(isPC === true){
 	 obj.timer=setInterval(function(){
 		 speed=(iTarget-obj.offsetHeight)/6;
 		 speed=speed>0?Math.ceil(speed):Math.floor(speed);
-		 if(obj.offsetHeight==iTarget)
-		 {clearInterval(obj.timer);
+		 if(obj.offsetHeight==iTarget){
+		 	clearInterval(obj.timer);
 		 }else{
-	      obj.style.height=obj.offsetHeight+speed+"px";
+	      	obj.style.height=obj.offsetHeight+speed+"px";
 		 }
 		},30);
 	}
 }
-
 </script>
 </body>
 </html>
