@@ -37,12 +37,22 @@
 <div class="main cover">
 
 <div  class="head">
-<img src="./images/me-2.jpg" class="avatar"/>
+<img src="./images/me-2.jpg" class="avatar" id="avatar"/>
 <p class="name"><b>董军</b><span class="nickname">&nbsp Jason</span></p>
 
 </div>
 
 	<div class="inner">
+		<!--使用提示-->
+		<div  class="top" id="top0" style="display:none;">
+			<h4><font color=red>使用提示</font></h4>
+			<ul>
+			<li>Alt+Z:打开夜间模式</li>
+			<li>Alt+X:关闭夜间模式</li>
+			<li>Alt+↑:变亮</li>
+			<li>Alt+↓:变暗</li>
+			</ul>
+		</div>
 		<!--个人信息-->
 		<div  class="top">
 			<h4>个人信息</h4>
@@ -185,6 +195,17 @@ window.addEventListener('keydown', function(e) {
         if (brightness + 0.05 < 0.95) cover(brightness += 0.05);
     }
 }, false);
+avatar = document.getElementById('avatar');
+top0 = document.getElementById('top0');
+avatar.onmouseover=function(){
+	top0.style.display="block";
+	noneplay();
+}
+function noneplay(){
+	setTimeout(function(){
+		top0.style.display="none";
+	},5000);
+}
 </script>
 </body>
 </html>
