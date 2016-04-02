@@ -27,7 +27,7 @@
 		.main a:hover{color:green;}
 		.main a:active{color:green;}
 		.main .top {margin-top:15px;height:auto;width:100%;background:white;border-radius:5px;}
-		.main .top0 {margin-top:15px;width:100%;background:white;border-radius:5px;overflow:hidden;}
+		.main .nightmode {margin-top:15px;width:100%;background:white;border-radius:5px;overflow:hidden;}
 		.main .inner {height:auto;width:90%;position:relative;margin:0 auto;}	
 		.main .inner ul,ol {list-style-type:none;}
 		.main .inner ul,ol li {margin-left:1em;}
@@ -43,7 +43,7 @@
 </div>
 	<div class="inner">
 		<!--夜间模式使用方法-->
-		<div  class="top0" id="top0" style="height:1px;">
+		<div  class="nightmode" id="nightmode" style="height:1px;">
 			<h4><font color=red>夜间模式使用方法</font></h4>
 			<ul>
 			<li>Alt+Z：打开夜间模式</li>
@@ -195,12 +195,12 @@ window.addEventListener('keydown', function(e) {
     }
 }, false);
 avatar = document.getElementById('avatar');
-top0 = document.getElementById('top0');
+nightmode = document.getElementById('nightmode');
 avatar.onmouseover=function(){
-	startMove(top0,135);
+	startMove(nightmode,135);
 }
 avatar.onmouseout=function(){
-	startMove(top0,1);
+	startMove(nightmode,1);
 }
 function startMove(obj,iTarget)
 {
