@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+	<head> 
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="Author" content="DongJun">
+	    <meta name="viewport" content="width=1040" />
+        <meta name="Keywords" content="简历,求职,编程,博客,记录,梦想">
+        <meta name="Description" content="这是一名想要在互联网的世界里闯荡的菜鸟，记录生活，追寻梦想">
+        <title>Jason-百度纯净搜索</title>	
+        <style>
+        * {margin:0px;padding:0px;}
+        .content {position:relative;text-align: center;}
+        .content .main {margin-top:10%;}
+        .content .main .searchbox {height:30px;width:160px;}
+        .content .main .submit {height:35px;width:90px;color:green;}
+        .content .main .submit:hover{background: white;color:red;}
+        .content .copyright{position: fixed;bottom:0;left:45%;}
+        </style>
+	</head>
+	<body>
+	<div class="content">
+		<div class="main">
+			<input class="searchbox" type="text" name="words" placeholder="Key Words" id="searchbox" />
+			<input class="submit" type="submit" value="百度纯净搜索" id="submit" />
+		</div>
+		<div class="copyright">
+			<ul class="links">
+				Powered by Jason
+			</ul>
+		</div>
+	</div>
+		<script>
+		var searchbox=document.getElementById("searchbox");
+		var submit=document.getElementById("submit");
+		submit.onclick=function(){
+			if(searchbox.value.trim().length <= 0){
+				alert("请输入搜索关键词");return false;
+			}
+			window.location="http://www.baidu.com/s?word=" + searchbox.value + "&tn=baidulocal";
+		}
+		</script>
+	</body>
+</html>
