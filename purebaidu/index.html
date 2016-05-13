@@ -38,6 +38,15 @@
 			}
 			window.location="http://www.baidu.com/s?word=" + searchbox.value + "&tn=baidulocal";
 		}
+		document.onkeydown=function(event){
+			e = event ? event :(window.event ? window.event : null); 
+			if(e.keyCode==13){ 
+				if(searchbox.value.trim().length <= 0){
+					alert("请输入搜索关键词");return false;
+				}
+				window.location="http://www.baidu.com/s?word=" + searchbox.value + "&tn=baidulocal"; 
+			}
+		}
 		</script>
 	</body>
 </html>
