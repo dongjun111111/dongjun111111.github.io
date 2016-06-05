@@ -23,34 +23,28 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
-
 	body
 	{
 		background: #f0f0f0;
 	}
-
 	body,input,textarea,select
 	{
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
 		color: #777;
 	}
-	
 	h1,h2,h3,h4,h5,h6
 	{
 		font-weight: 600;
 		text-transform: uppercase;
 		color: #888;
 	}
-	
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 		{
 			color: inherit;
 			text-decoration: none;
 			border: 0;
 		}
-
 	a
 	{
 		color: #666;
@@ -62,7 +56,6 @@
 		-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 	}
-
 		a strong
 		{
 			-moz-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
@@ -320,139 +313,6 @@
 			{
 				margin-top: 0;
 			}
-
-	/* Forms */
-
-		form
-		{
-		}
-		
-			form label
-			{
-				display: block;
-			}
-		
-			form input.text,
-			form select,
-			form textarea
-			{
-				-webkit-appearance: none;
-				display: block;
-				border: 0;
-				background: #e8e8e8;
-				width: 100%;
-				box-shadow: inset 2px 2px 0px 0px rgba(0,0,0,0.1);
-				border-radius: 4px;
-				padding: 0.75em 1em 0.75em 1em;
-				-moz-transition: background-color 0.25s ease-in-out;
-				-webkit-transition: background-color 0.25s ease-in-out;
-				-o-transition: background-color 0.25s ease-in-out;
-				-ms-transition: background-color 0.25s ease-in-out;
-				transition: background-color 0.25s ease-in-out;
-			}
-
-				form input.text:hover,
-				form select:hover,
-				form textarea:hover
-				{
-				}
-
-				form input.text:focus,
-				form select:focus,
-				form textarea:focus
-				{
-					background: #f0f0f0;
-				}
-				
-				form textarea
-				{
-					min-height: 11em;
-				}
-
-				form .formerize-placeholder
-				{
-					color: #555 !important;
-				}
-
-				form ::-webkit-input-placeholder
-				{
-					color: #555 !important;
-				}
-
-				form :-moz-placeholder
-				{
-					color: #555 !important;
-				}
-
-				form ::-moz-placeholder
-				{
-					color: #555 !important;
-				}
-
-				form :-ms-input-placeholder
-				{
-					color: #555 !important;
-				}
-
-				form ::-moz-focus-inner
-				{
-					border: 0;
-				}
-			
-	/* Tables */
-	
-		table
-		{
-			width: 100%;
-		}
-		
-			table.style1
-			{
-				width: 100%;
-			}
-			
-				table.style1 tbody tr
-				{
-					border-top: solid 1px #E5E5E5;
-				}
-
-				table.style1 tbody tr:first-child
-				{
-					border-top: 0;
-				}
-			
-				table.style1 td
-				{
-					padding: 0.75em 1em 0.75em 1em;
-				}
-				
-				table.style1 th
-				{
-					text-align: left;
-					font-weight: bold;
-					padding: 0.75em 1em 0.75em 1em;
-				}
-			
-				table.style1 thead
-				{
-					background: #878787;
-					color: #fff;
-					font-weight: 400;
-					text-transform: uppercase;
-					border: 0;
-					box-shadow: 0.125em 0.175em 0 0 rgba(0,0,0,0.125);
-				}
-				
-				table.style1 tfoot
-				{
-					background: #F0F0F0;
-					border-top: solid 2px #E5E5E5;
-				}
-				
-				table.style1 tbody
-				{
-				}
-
 	/* Buttons */
 		
 		.button
@@ -1001,22 +861,17 @@
 	#header
 	{
 		position: relative;
-		/*border-bottom: solid 2px #e5e5e5;
-		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;*/
 	}
 		#header h1
 		{
-			font-family: 'Arvo';
+			font-family: 'Georgia';
 			font-weight: 700;
-			color: #ed786a;
-			text-shadow: 0.05em 0.075em 0 rgba(0,0,0,0.1);
+			color: green;
 		}
-
 			#header h1 a
 			{
 				border: 0;
 			}
-		
 		#header p
 		{
 			text-transform: uppercase;
