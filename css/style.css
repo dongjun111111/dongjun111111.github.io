@@ -961,24 +961,6 @@
 			text-align: center;
 		}
 	
-	#features-wrapper
-	{
-		position: relative;
-		overflow: hidden;
-		background: #fff;
-		text-align: center;
-	}
-	
-		#features-wrapper p
-		{
-			text-align: center;
-		}
-	
-		#features-wrapper .actions
-		{
-			margin-top: 1.25em;
-		}
-
 	#main-wrapper
 	{
 		position: relative;
@@ -1203,6 +1185,5 @@
 
 	#copyright
 	{
-		border-top: solid 2px #e5e5e5;
 		text-align: center;
 	}
