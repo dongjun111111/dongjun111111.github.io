@@ -818,7 +818,8 @@
 /* One */
 
 	#one {
-		background: url('images/overlay.png'), url('../../images/one.jpg');
+		/*background: url('images/overlay.png'), url('../../images/one.jpg');*/
+		background-color:rgb(122,140,162);
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -827,7 +828,8 @@
 /* Two */
 
 	#two {
-		background: url('images/overlay.png'), url('../../images/two.jpg');
+		/*background: url('images/overlay.png'), url('../../images/two.jpg'); */
+		background-color:rgb(89,102,95);
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;

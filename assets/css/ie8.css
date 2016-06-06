@@ -71,7 +71,8 @@
 
 	#one {
 		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
-		background: url("../../images/one.jpg");
+		/*background: url("../../images/one.jpg"); */
+		background-color:rgb(122,140,162);
 		background-size: cover;
 	}
 
@@ -93,9 +94,10 @@
 /* Two */
 
 	#two {
-		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+		/*-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 		background: url("../../images/two.jpg");
-		background-size: cover;
+		background-size: cover; */
+		background-color: rgb(89,102,95);
 	}
 
 		#two .content {

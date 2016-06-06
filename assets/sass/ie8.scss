@@ -74,7 +74,8 @@
 
 	#one {
 		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-		background: url('../../images/one.jpg');
+		/*background: url('../../images/one.jpg');*/
+		background-color:rgb(122,140,162);
 		background-size: cover;
 
 		.content {
@@ -98,7 +99,8 @@
 
 	#two {
 		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-		background: url('../../images/two.jpg');
+		/*background: url('../../images/two.jpg'); */
+		background-color:rgb(89,102,95);
 		background-size: cover;
 
 		.content {
