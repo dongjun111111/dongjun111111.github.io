@@ -50,7 +50,8 @@
 
 	#intro {
 		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-		background: url('../../images/intro.jpg');
+		/*background: url('../../images/intro.jpg');*/
+		background-color:rgb(128,116,126);
 		background-size: cover;
 
 		.content {
