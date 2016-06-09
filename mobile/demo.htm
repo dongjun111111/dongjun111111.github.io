@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>获取设备信息</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+    
+    <div id="status"></div>
+
+    <div class="link" style="position:fixed;bottom:20px">
+        <a href="demo.htm">1、 获取设备信息</a><br />
+        <a href="demo_1.htm">2、 摇晃判断</a><br />
+        <a href="demo_2.htm">3、 简易模拟微信摇一摇</a>
+    </div>
+    <script>
+    if (window.DeviceMotionEvent) {
+        window.addEventListener('devicemotion', deviceMotionHandler, false);
+    } else {
+        alert('本设备不支持devicemotion事件');
+    }
+
+    function deviceMotionHandler(eventData) {
+        var acceleration = eventData.accelerationIncludingGravity,
+            x, y, z;
+
+        x = acceleration.x;
+        y = acceleration.y;
+        z = acceleration.z;
+        document.getElementById("status").innerHTML = "x:"+x+"<br />y:"+y+"<br />z:"+z;
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>摇晃判断</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+    
+    <div id="status">[-请晃动设备-]</div>
+
+    <div class="link" style="position:fixed;bottom:20px">
+        <a href="demo.htm">1、 获取设备信息</a><br />
+        <a href="demo_1.htm">2、 摇晃判断</a><br />
+        <a href="demo_2.htm">3、 简易模拟微信摇一摇</a>
+    </div>
+    <script>
+    var SHAKE_THRESHOLD = 800;
+    var last_update = 0;
+    var x = y = z = last_x = last_y = last_z = 0;
+
+    if (window.DeviceMotionEvent) {
+        window.addEventListener('devicemotion', deviceMotionHandler, false);
+    } else {
+        alert('本设备不支持devicemotion事件');
+    }
+
+    function deviceMotionHandler(eventData) {
+        var acceleration = eventData.accelerationIncludingGravity;
+        var curTime = new Date().getTime();
+
+        if ((curTime - last_update) > 100) {
+            var diffTime = curTime - last_update;
+            last_update = curTime;
+            x = acceleration.x;
+            y = acceleration.y;
+            z = acceleration.z;
+            var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
+            var status = document.getElementById("status");
+
+            if (speed > SHAKE_THRESHOLD) {
+                var text = "x:"+x+"<br />y:"+y+"<br />z:"+z+"<br />speed:"+speed;
+                status.innerHTML = text;
+            }
+            last_x = x;
+            last_y = y;
+            last_z = z;
+        }
+    }
+    </script>
+
+</body>
+</html>
