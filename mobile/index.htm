@@ -85,7 +85,10 @@
     var SHAKE_THRESHOLD = 800;
     var last_update = 0;
     var x = y = z = last_x = last_y = last_z = 0;
-
+    var randnum =Math.ceil(Math.random()*10);
+    if (randnum >4){
+        randnum = 1
+    }
     if (window.DeviceMotionEvent) {
         window.addEventListener('devicemotion', deviceMotionHandler, false);
     } else {
@@ -125,12 +128,7 @@
     }
 
     //切换图片
-    var pic = document.getElementById("pic");
-    Math.random()*100
-    var randnum =Math.ceil(Math.random()*10);
-    if (randnum >4){
-        randnum = 1
-    }
+    var pic = document.getElementById("pic");    
     var dogeurl = "img/img_";
     pic.style.background="url("+dogeurl+randnum+".png) no-repeat";
     </script>
