@@ -85,10 +85,14 @@
     var SHAKE_THRESHOLD = 800;
     var last_update = 0;
     var x = y = z = last_x = last_y = last_z = 0;
-    var randnum =Math.ceil(Math.random()*10);
-    if (randnum >4){
-        randnum = 1
-    }
+    var randnum;
+    setInterval(function(){
+        randnum =Math.ceil(Math.random()*5);
+        if (randnum >4){
+            randnum = 1
+        }
+    },1000);
+   
     if (window.DeviceMotionEvent) {
         window.addEventListener('devicemotion', deviceMotionHandler, false);
     } else {
