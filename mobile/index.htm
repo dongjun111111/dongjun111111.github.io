@@ -126,8 +126,13 @@
 
     //切换图片
     var pic = document.getElementById("pic");
-    var dogeurl = "doge_1.png";
-    pic.style.background="url("+dogeurl+") no-repeat";
+    Math.random()*100
+    var randnum =Math.ceil(Math.random()*10);
+    if (randnum >4){
+        randnum = 1
+    }
+    var dogeurl = "img_";
+    pic.style.background="url("+dogeurl+randnum+".png) no-repeat";
     </script>
 
 </body>
