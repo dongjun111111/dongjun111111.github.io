@@ -127,10 +127,7 @@
 
     //切换图片
     setInterval(function(){
-        randnum =Math.ceil(Math.random()*5);
-        if (randnum >4){
-            randnum = 1
-        }
+        randnum =Math.ceil(Math.random()*4);
         var pic = document.getElementById("pic");    
         var dogeurl = "img/img_";
         pic.style.background="url("+dogeurl+randnum+".png) no-repeat";
