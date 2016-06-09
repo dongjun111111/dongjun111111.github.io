@@ -15,7 +15,7 @@
             -ms-transition: all 1s;
              -o-transition: all 1s;
                 transition: all 1s; }
-    .result .pic { width: 50px; height: 50px; float: left; background: url(doge_1.png) no-repeat; overflow:hidden;}
+    .result .pic { width: 50px; height: 50px; float: left; overflow:hidden;}
     .result .con { overflow: hidden; zoom: 1; padding-left: 10px; line-height: 24px; }
     .result-show { opacity: 1; margin-top: 50px; }
     .loading { position: absolute; top: 240px; left: 50%; margin-left: -50px; width: 100px; height: 100px; background: url(spinner.png) no-repeat; background-size: 100px 100px; opacity: 0;
@@ -72,7 +72,7 @@
     <div id="hand" class="hand hand-animate"></div>
     <div id="loading" class="loading"></div>
     <div id="result" class="result">
-        <div class="pic"></div>
+        <div class="pic" id="pic"></div>
         <div class="con">摇晃结果：<br/>你干嘛摇我</div>
     </div>
 
@@ -123,6 +123,10 @@
             document.getElementById("loading").className = "loading";
         }, 1000);
     }
+
+    //切换图片
+    var pic = document.getElementById("pic");
+    pic.style.background="url(doge_1.png) no-repeat";
     </script>
 
 </body>
