@@ -93,8 +93,8 @@
 			</section>
 		<!-- Footer -->
 		<!--微信二维码-->
-		<div class="overlay"></div>
-		<div class="weixindiag"><a class="weixinclose"></a> <img src="./images/weixin.gif" width="220px" height="220px" /></div>
+		<!--微信暂时不用 <div class="overlay"></div>
+		<div class="weixindiag"><a class="weixinclose"></a> <img src="./images/weixin.gif" width="220px" height="220px" /></div> -->
 		<!--微信二维码-->
 			<footer id="footer">
 				<!-- Icons -->					
@@ -119,20 +119,20 @@
 			<script src="assets/js/main.js"></script>
 			<script>
 			//微信start	
-			$(function(){
-				$(".weixin").click(function(){			 
-				$(".overlay").css({display:"block",height:$(document).height()});
-				$(".weixindiag").css({
-					left:($("body").width()-$(".weixindiag").width())/2+"px",
-					top:($(window).height()-$(".weixindiag").height())/2+$(window).scrollTop()+"px",
-					display:"block"
-				});
-				});				
-				$(".weixinclose").click(function(){
-				$(".overlay,.weixindiag").css("display","none");
-				return false;
-				});
-			})
+			// $(function(){
+			// 	$(".weixin").click(function(){			 
+			// 	$(".overlay").css({display:"block",height:$(document).height()});
+			// 	$(".weixindiag").css({
+			// 		left:($("body").width()-$(".weixindiag").width())/2+"px",
+			// 		top:($(window).height()-$(".weixindiag").height())/2+$(window).scrollTop()+"px",
+			// 		display:"block"
+			// 	});
+			// 	});				
+			// 	$(".weixinclose").click(function(){
+			// 	$(".overlay,.weixindiag").css("display","none");
+			// 	return false;
+			// 	});
+			// })
 			//微信end
 			</script>
 
