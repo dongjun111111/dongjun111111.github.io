@@ -94,14 +94,14 @@
 			</section>
 		<!-- Footer -->
 		<!--微信二维码-->
-		<!--微信暂时不用 <div class="overlay"></div>
-		<div class="weixindiag"><a class="weixinclose"></a> <img src="./images/weixin.gif" width="220px" height="220px" /></div> -->
+		<div class="overlay"></div>
+		<div class="weixindiag"><a class="weixinclose"></a> <img src="./images/weixin.gif" width="220px" height="220px" /></div> 
 		<!--微信二维码-->
 			<footer id="footer">
 				<!-- Icons -->					
 					<ul class="actions">
 						<li><a href="http://weibo.com/u/3164465513/home?wvr=5" title="Weibo"><img src="./images/about_weibo.png" height="35px" width="35px" alt="weibo" /></a></li>
-						<!-- <li><a href="javascript:void(0);" class="weixin"><img src="./images/about_weixin.png" height="35px" width="35px" alt="weixin" /></a></li> -->
+						<li><a href="javascript:void(0);" class="weixin"><img src="./images/about_weixin.png" height="35px" width="35px" alt="weixin" title="点击一下" /></a></li>
 					</ul>              
 				<!-- Menu -->
 					<ul class="menu">
@@ -121,20 +121,20 @@
 			<script src="assets/js/main.js"></script>
 			<script>
 			//微信start	
-			// $(function(){
-			// 	$(".weixin").click(function(){			 
-			// 	$(".overlay").css({display:"block",height:$(document).height()});
-			// 	$(".weixindiag").css({
-			// 		left:($("body").width()-$(".weixindiag").width())/2+"px",
-			// 		top:($(window).height()-$(".weixindiag").height())/2+$(window).scrollTop()+"px",
-			// 		display:"block"
-			// 	});
-			// 	});				
-			// 	$(".weixinclose").click(function(){
-			// 	$(".overlay,.weixindiag").css("display","none");
-			// 	return false;
-			// 	});
-			// })
+			$(function(){
+				$(".weixin").click(function(){			 
+				$(".overlay").css({display:"block",height:$(document).height()});
+				$(".weixindiag").css({
+					left:($("body").width()-$(".weixindiag").width())/2+"px",
+					top:($(window).height()-$(".weixindiag").height())/2+$(window).scrollTop()+"px",
+					display:"block"
+				});
+				});				
+				$(".weixinclose").click(function(){
+				$(".overlay,.weixindiag").css("display","none");
+				return false;
+				});
+			})
 			//微信end
 			</script>
 
