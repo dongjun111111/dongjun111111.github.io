@@ -98,6 +98,7 @@ h3
 /*********************************************************************************/
 #nav
 {
+	font-family: '微软雅黑';
 	position: absolute;
 	top: 1em;
 	left: 0;
@@ -125,6 +126,7 @@ h3
 		{
 			display: none;
 			border: 1px solid #D8D8D8;
+			border-radius: 5px;
 			border-bottom-color: #ffffff;
 			color: #ff00ff;
 			background-color: #ffffff;
