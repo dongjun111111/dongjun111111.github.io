@@ -318,12 +318,13 @@ br.clear
 	}
 	
 		#nav > ul > li > a
-		{
+		{   font-family: '微软雅黑';
+            font-size: 1.5em;
 			border: 0;
 			text-decoration: none;
 			text-transform: uppercase;
 			font-weight: 400;
-			color: #777;
+			color: black;
 			outline: 0;
 		}
 
