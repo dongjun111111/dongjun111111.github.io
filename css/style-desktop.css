@@ -94,44 +94,119 @@ h3
 		letter-spacing: 2px;
 	}
 /*********************************************************************************/
-/* Nav                                                                        */
+/* Nav                                                                           */
 /*********************************************************************************/
-#nav
-{
-	font-family: '微软雅黑';
-	position: absolute;
-	top: 1em;
-	left: 0;
-	width: 100%;
-}
-	#nav > ul > li
-	{
-		display: inline-block;
-		padding-right: 2em;
+
+	#nav
+	{	
+		font-family: '微软雅黑';
+		position: absolute;
+		top: 1em;
+		left: 0;
+		width: 100%;
 	}
-		#nav > ul > li:last-child
+
+		#nav > ul > li
 		{
-			padding-right: 0;
-		}
-		#nav > ul > li > a
-		{
-			display: block;
-		}
-			#nav > ul > li > a > span
-			{
-				font-size: 0.85em;
-				letter-spacing: 3px;
-			}
-		#nav > ul > li > ul
-		{
-			display: none;
-			border: 1px solid #D8D8D8;
-			border-radius: 5px;
-			border-bottom-color: #ffffff;
-			color: #ff00ff;
-			background-color: #ffffff;
+			display: inline-block;
+			padding-right: 2em;
 		}
 		
+			#nav > ul > li:last-child
+			{
+				padding-right: 0;
+			}
+
+			#nav > ul > li > a
+			{
+				display: block;
+			}
+
+				#nav > ul > li > a > span
+				{
+					font-size: 0.85em;
+					letter-spacing: 3px;
+				}
+
+			#nav > ul > li > ul
+			{
+				display: none;
+			}
+	
+	.dropotron
+	{
+		text-align: left;
+		border: solid 1px #e5e5e5;
+		border-radius: 4px;
+		background: #fff;
+		background: rgba(255,255,255,0.965);
+		box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+		padding: 0.75em 0 0.5em 0;
+		min-width: 12em;
+	}
+	
+		.dropotron-level-0
+		{
+			margin-top: 1.5em;
+			margin-left: -1em;
+		}
+
+			.dropotron-level-0:after
+			{
+				content: '';
+				display: block;
+				position: absolute;
+				left: 1.25em;
+				top: -moz-calc(-0.75em + 1px);
+				top: -webkit-calc(-0.75em + 1px);
+				top: -o-calc(-0.75em + 1px);
+				top: -ms-calc(-0.75em + 1px);
+				top: calc(-0.75em + 1px);
+				border-left: solid 0.75em rgba(255,255,255,0);
+				border-right: solid 0.75em rgba(255,255,255,0);
+				border-bottom: solid 0.75em #fff;
+			}
+
+			.dropotron-level-0:before
+			{
+				content: '';
+				display: block;
+				position: absolute;
+				left: 1.25em;
+				top: -0.75em;
+				border-left: solid 0.75em rgba(255,255,255,0);
+				border-right: solid 0.75em rgba(255,255,255,0);
+				border-bottom: solid 0.75em #ccc;
+			}
+
+		.dropotron span,
+		.dropotron a
+		{
+			display: block;
+			padding: 0.3em 1em 0.3em 1em;
+			border: 0;
+			border-top: solid 1px #f0f0f0;
+			outline: 0;
+		}
+
+		.dropotron li:first-child > span,
+		.dropotron li:first-child > a
+		{
+			border-top: 0;
+			padding-top: 0;
+		}
+		
+		.dropotron li:hover > span,
+		.dropotron li:hover > a
+		{
+			color: #ed786a;
+			-moz-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+			-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+			-o-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+			-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+			transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+		}
+
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
