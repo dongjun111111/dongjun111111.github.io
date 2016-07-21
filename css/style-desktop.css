@@ -199,7 +199,7 @@ h3
 		.dropotron li:hover > span,
 		.dropotron li:hover > a
 		{
-			color: #ed786a;
+			color: green;
 			-moz-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 			-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 			-o-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
