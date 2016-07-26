@@ -231,9 +231,11 @@ function IsPC() {
     }
     return flag;
 }
+//toolbar=no,location=no,status=no,menubar=no
 avatar = document.getElementById('avatar');
 avatar.onclick =function(){
-	window.location = "assets/resume.pdf";
+	window.open("assets/resume.pdf","_blank");
+	return false;
 }
 nightmode = document.getElementById('nightmode');
 isPC = IsPC();
