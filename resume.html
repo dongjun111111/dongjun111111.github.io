@@ -231,6 +231,9 @@ function IsPC() {
     return flag;
 }
 avatar = document.getElementById('avatar');
+avatar.onclick =function(){
+	window.location = "assets/resume.pdf";
+}
 nightmode = document.getElementById('nightmode');
 isPC = IsPC();
 if(isPC === true){
