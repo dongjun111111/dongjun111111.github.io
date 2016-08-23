@@ -239,7 +239,7 @@ br.clear
 
 	#banner-wrapper .inner
 	{
-		background-color:#555;
+		background-image:url(../images/header.png);
 		background-size: cover;
 	}
 

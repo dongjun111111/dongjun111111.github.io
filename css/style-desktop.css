@@ -5,6 +5,7 @@ body,input,textarea,select
 {
 	line-height: 1.65em;
 	font-size: 13pt;
+	background-image:url(../images/header.png) ;
 }
 h2
 {
@@ -58,6 +59,7 @@ h3
 /*********************************************************************************/
 #header-wrapper
 {
+	background-color: rgb(255,182,110);
 }
 #features-wrapper
 {
