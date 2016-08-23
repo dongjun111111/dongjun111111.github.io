@@ -228,9 +228,8 @@ h3
 		position: absolute;
 		top: 50%;
 		width: 35px;
-		height: 141px;
+		height: 140px;
 		margin-top: -70px;
-		background: url('images/bracket.svg');
 		opacity: 0.15;
 	}
 	#banner:before
