@@ -88,7 +88,7 @@ p
 
 p, ul, ol, dl, table, blockquote
 {
-	margin-bottom: 2em;
+	margin-bottom: 0.5em;
 }
 
 br.clear

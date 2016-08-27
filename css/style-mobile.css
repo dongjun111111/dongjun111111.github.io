@@ -370,6 +370,7 @@
 
 	#copyright
 	{
-		margin-top: 0.5em;
 		padding-top: 0.5em;
+		background-image: url(../images/header.png);
+		background-repeat: repeat;
 	}
