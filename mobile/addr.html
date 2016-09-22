@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5</title>
+<!-- IE9 以下版本浏览器兼容HTML5的方法，使用html5shiv包 -->
+<!--[if lt IE9]> 
+<script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+<![endif]-->
+<style>
+/*初始化新标签的CSS*/
+*{margin:0;padding:0;}
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+</style>
+</head>
+<body>
+<video width="320" height="240" controls>
+<source src="movie.mp4" type="video/mp4">
+<source src="movie.ogg" type="video/ogg">
+您的浏览器不支持video标签
+</video>
+<br><br>
+<p id="addr">点击获取当前坐标：
+<button onclick="getLocation()">获取</button></p>
+<script type="text/javascript">
+var x = document.getElementByid("addr");
+function getLocation(){
+  if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(showPosition);
+  }else{
+    x.innerHTML="该浏览器不支持地理位置";
+  }
+}
+
+function showPosition(position){
+  x.innerHTML="纬度："+position.coords.latitude +"<br>经度："+position.coords.longitude;
+}
+</script>
+</body>
+</html>
