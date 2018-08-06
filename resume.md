@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<title>Jason</title>
-<xmp theme="united" style="display:none;">
 
     # 联系方式
 
@@ -73,7 +69,3 @@
     
     # 致谢
     感谢您花时间阅读我的简历，期待能有机会和您共事。
-
-</xmp>
-<script src="v/0.2/strapdown.js"></script>
-</html>   
