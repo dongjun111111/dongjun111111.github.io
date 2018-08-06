@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <textarea id="text-input" oninput="this.editor.update()"
-              rows="6" cols="60">
-            # 董军 
-            ## 后端开发
-    </textarea>
-    <div id="preview"> </div>
-    <script src="js/markdown.js"></script>
-    <script>
-      function Editor(input, preview) {
-        this.update = function () {
-          preview.innerHTML = markdown.toHTML(input.value);
-        };
-        input.editor = this;
-        this.update();
-      }
-      var $ = function (id) { return document.getElementById(id); };
-      new Editor($("text-input"), $("preview"));
-    </script>
-  </body>
-</html>
+<title>Hello World</title>
+
+<xmp theme="united" style="display:none;">
+# 董军
+
+## Chapter 
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+et dolore magna aliqua. 
+
+```
+ddd
+```
+
+
+</xmp>
+
+<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+</html>   
