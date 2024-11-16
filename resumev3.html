@@ -28,7 +28,7 @@
 ### 齐物云安全监测平台(IoT) 后端
 齐物云安全监测平台是一个建筑行业监测安全的IoT平台，广泛应用于道路、房屋等建筑体建设、维护期间的检测。
 <br> 主导了监测平台系统前台、管理系统后端开发。包括不限于硬件数据采集对接、整体系统设计与实现、前台整体系统后端实现。
-<br> 硬件通过485串口通信+LORA协议采集到数据后丢进MQTT，交由监测平台上传到InfluxDB数据库处理分析；系统后台使用Go语言实现，结合InfluxDB、MQTT、MySQL、Redis、Nginx、gRPC等技术实现。
+<br> 硬件通过485串口通信+LORA协议采集到数据后丢进MQTT，交由监测平台上传到InfluxDB数据库处理分析；系统后台使用Python和Golang实现，结合InfluxDB、MQTT、MySQL、Redis、Nginx、gRPC等技术实现。
 <br> 在这期间：
 
 - 独立完成日志数据迁移到Elasticsearch,日志查询平均时间从1000ms降低到500ms
